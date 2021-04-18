@@ -1,0 +1,108 @@
+<?xml encoding="UTF-8"?>
+
+        <!ELEMENT current (city,temperature,feels_like,humidity,pressure,wind,
+                clouds,visibility,precipitation,weather,lastupdate)>
+        <!ATTLIST current
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT city (coord,country,timezone,sun)>
+        <!ATTLIST city
+                xmlns CDATA #FIXED ''
+                id CDATA #REQUIRED
+                name NMTOKEN #REQUIRED>
+
+        <!ELEMENT temperature EMPTY>
+        <!ATTLIST temperature
+                xmlns CDATA #FIXED ''
+                max CDATA #REQUIRED
+                min CDATA #REQUIRED
+                unit NMTOKEN #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT feels_like EMPTY>
+        <!ATTLIST feels_like
+                xmlns CDATA #FIXED ''
+                unit NMTOKEN #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT humidity EMPTY>
+        <!ATTLIST humidity
+                xmlns CDATA #FIXED ''
+                unit CDATA #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT pressure EMPTY>
+        <!ATTLIST pressure
+                xmlns CDATA #FIXED ''
+                unit NMTOKEN #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT wind (speed,gusts,direction)>
+        <!ATTLIST wind
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT clouds EMPTY>
+        <!ATTLIST clouds
+                xmlns CDATA #FIXED ''
+                name CDATA #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT visibility EMPTY>
+        <!ATTLIST visibility
+                xmlns CDATA #FIXED ''
+                value CDATA #REQUIRED>
+
+        <!ELEMENT precipitation EMPTY>
+        <!ATTLIST precipitation
+                xmlns CDATA #FIXED ''
+                mode NMTOKEN #REQUIRED>
+
+        <!ELEMENT weather EMPTY>
+        <!ATTLIST weather
+                xmlns CDATA #FIXED ''
+                icon NMTOKEN #REQUIRED
+                number CDATA #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT lastupdate EMPTY>
+        <!ATTLIST lastupdate
+                xmlns CDATA #FIXED ''
+                value NMTOKEN #REQUIRED>
+
+        <!ELEMENT coord EMPTY>
+        <!ATTLIST coord
+                xmlns CDATA #FIXED ''
+                lat CDATA #REQUIRED
+                lon CDATA #REQUIRED>
+
+        <!ELEMENT country (#PCDATA)>
+        <!ATTLIST country
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT timezone (#PCDATA)>
+        <!ATTLIST timezone
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT sun EMPTY>
+        <!ATTLIST sun
+                xmlns CDATA #FIXED ''
+                rise NMTOKEN #REQUIRED
+                set NMTOKEN #REQUIRED>
+
+        <!ELEMENT speed EMPTY>
+        <!ATTLIST speed
+                xmlns CDATA #FIXED ''
+                name NMTOKEN #REQUIRED
+                unit CDATA #REQUIRED
+                value CDATA #REQUIRED>
+
+        <!ELEMENT gusts EMPTY>
+        <!ATTLIST gusts
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT direction EMPTY>
+        <!ATTLIST direction
+                xmlns CDATA #FIXED ''
+                code NMTOKEN #REQUIRED
+                name NMTOKEN #REQUIRED
+                value CDATA #REQUIRED>
